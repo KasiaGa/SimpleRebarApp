@@ -1,0 +1,17 @@
+{application, simpleapp,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {modules, [
+              simpleapp_app,
+              simpleapp_sup,
+              simple_server
+            ]},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { simpleapp_app, []}},
+  {env, []}
+ ]}.
